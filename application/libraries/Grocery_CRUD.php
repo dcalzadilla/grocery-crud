@@ -4910,6 +4910,19 @@ class Grocery_CRUD extends grocery_CRUD_States
 
 		return $this;
 	}
+	
+	/**
+     *
+     * Enter description here ...
+     * @param string $field
+     * @param mixed $callback
+     */
+    public function callback_read_field($field, $callback = null) 
+	{
+        $this->callback_read_field[$field] = $callback;
+
+        return $this;
+    }
 
 	/**
 	 *
